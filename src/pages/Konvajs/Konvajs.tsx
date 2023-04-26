@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Stage, Layer, Rect, Circle } from "react-konva"
+import { Stage, Layer, Rect, } from "react-konva"
 
 export default function Konvajs() {
     const w = window.innerWidth;
