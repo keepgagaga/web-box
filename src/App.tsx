@@ -1,16 +1,14 @@
-import { Link } from 'react-router-dom'
 import './App.css'
+import HeadNav from './components/HeadNav'
 
 function App() {
 
   return (
     <>
       <div className='App'>
-        <Link to={'/threejs'}>threejs</Link>
-        <Link to={'/konvajs'}>konvajs</Link>
-        <Link to={'/d3js'}>d3js</Link>
-        <Link to={'/wasm'}>wasm</Link>
-        <Link to={'/flutterWeb'}>flutterWeb</Link>
+        <HeadNav></HeadNav>
+        <div className='w-screen h-screen bg-red-300'></div>
+        <div className='w-screen h-screen bg-yellow-300'></div>
       </div>
     </>
   )

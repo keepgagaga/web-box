@@ -8,6 +8,7 @@ import Konvajs from './pages/Konvajs/Konvajs.tsx'
 import D3js from './pages/D3js/D3js.tsx'
 import Wasm from './pages/Wasm/wasm.tsx'
 import FlutterWeb from './pages/FlutterWeb.tsx'
+import About from './pages/About.tsx'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: '/flutterWeb',
     element: <FlutterWeb></FlutterWeb>
+  },
+  {
+    path: 'about',
+    element: <About></About>
   }
 ]);
 
