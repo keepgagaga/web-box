@@ -12,20 +12,13 @@ export default function MoreStar() {
     const h = window.innerHeight;
     const [shapes, setShapes] = useState<shape[]>([]);
 
+    useEffect(() => {
+        addShape(Generate100Star());
+    }, []);
+
     const addShape = (newShapes: shape[]) => {
         setShapes([...shapes, ...newShapes]);
     }
-
-    useEffect(() => {
-        const temp: shape[] = [];
-        for (let i = 0; i < 100; i++) {
-            temp.push({
-                x: w * Math.random(),
-                y: h * Math.random(),
-            });
-        }
-        addShape(temp);
-    }, []);
 
     const Generate100Star = (): shape[] => {
         const temp: shape[] = [];
