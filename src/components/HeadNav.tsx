@@ -25,7 +25,7 @@ const navData = [
 
 export default function HeadNav() {
     return <>
-        <div className="flex flex-row justify-center items-center w-screen h-10 bg-transparent fixed">
+        <div className="flex flex-row justify-center items-center w-screen h-10 bg-transparent fixed z-10">
             {
                 navData.map(n => {
                     return <div key={n.label} className="mx-8"><Link to={n.path}>{n.label}</Link></div>
