@@ -1,5 +1,6 @@
 import './App.css'
 import HeadNav from './components/HeadNav'
+import MoreStar from './components/MoreStar'
 
 function App() {
 
@@ -7,8 +8,9 @@ function App() {
     <>
       <div className='App'>
         <HeadNav></HeadNav>
-        <div className='w-screen h-screen bg-red-300'></div>
-        <div className='w-screen h-screen bg-yellow-300'></div>
+        <div className='w-screen h-screen bg-red-300'>
+          <MoreStar></MoreStar>
+        </div>
       </div>
     </>
   )

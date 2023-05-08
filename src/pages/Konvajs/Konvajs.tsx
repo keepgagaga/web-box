@@ -8,7 +8,7 @@ export default function Konvajs() {
     const [rects, setRects] = useState<number[]>([]);
 
     useEffect(() => {
-        let temp = [];
+        const temp = [];
         for (let i = 0; i < 65; i++) {
             temp.push(i);
         }
