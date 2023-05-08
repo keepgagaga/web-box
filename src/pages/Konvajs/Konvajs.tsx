@@ -36,7 +36,7 @@ export default function Konvajs() {
         <Stage width={w} height={h}>
             <Layer>
                 {
-                    rects.map((r, i) => {
+                    rects.map((_, i) => {
                         return <Rect key={i} width={w - i * step} height={h - i * step} x={i * step / 2} y={i * step / 2} stroke={getRandomColor()} ></Rect>
                     })
                 }
