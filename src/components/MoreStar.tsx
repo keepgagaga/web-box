@@ -57,6 +57,7 @@ export default function MoreStar() {
             </Layer>
         </Stage>
         <div className="absolute top-10 right-2">
+            <div className="text-xl text-white">{shapes.length}star</div>
             <div className="text-5xl text-white" onClick={deleteStar}>-</div>
             <div className="text-5xl text-white" onClick={plusStar}>+</div>
         </div>
